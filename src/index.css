@@ -1,0 +1,377 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+/*------- Navbar --------*/
+nav {
+    position: sticky !important;
+    top: 0;
+}
+  
+.navbar {
+    border: 0;
+    margin-bottom: 30px;
+    color: rgba(255,255,255,0.8);
+    background-color: rgba(0, 0, 0) !important;
+    box-shadow: 0 4px 18px 0px rgba(0, 0, 0, 0.12), 0 7px 10px -5px rgba(0, 0, 0, 0.15);
+    z-index: 3 !important;
+    overflow: hidden;
+}
+
+.navbar-nav {
+    margin-left: -90px !important;
+}
+  
+button.navbar-toggler:focus { outline: 1px none !important; }
+
+.nav-link {
+    transition: all 0.4s ease;
+    color: #fff !important;
+    border: 5px solid rgba(0,0,0,0);
+    padding: 10px 20px !important;
+    margin: 0 10px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+}
+  
+.navbar-collapse .navbar-nav .nav-item .nav-link:hover {
+    background-color: rgba(255,255,255,0.2);
+    border: 5px solid rgba(0,0,0,0);
+    padding: 10px 20px;
+    color: #fff;
+    border-radius: 5px !important;
+}
+
+.navbar-collapse .navbar-nav .nav-item .nav-link:focus,
+.navbar-collapse .navbar-nav .nav-item .nav-link:active {
+    border: 5px solid rgba(255,255,255,0.5);
+    color: #fff; 
+    border-radius: 5px !important;
+}
+
+.logo {
+    width: 80px;
+    margin: -23px;
+    position: absolute;
+    left: 40px;
+    top: 35px;
+    margin-right: -20px; 
+    overflow: hidden;
+}
+
+/*-------- Layout ------------*/
+.m-off {
+    margin-top: -30px;
+}
+
+/*------ Singup/Signin ----------*/
+.register-background {
+    margin-top: -30px;
+    padding-top: 60px;
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.7)), url("./img/register-background.jpg");
+    background-size: cover;
+    height: 600px;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.card {
+    display: block;
+    margin: 0 auto;
+    position: relative !important;
+    z-index: 1 !important;
+    box-shadow: 0 0 30px rgba(0,0,0,0.4);
+    border: none;
+}
+
+.card .card-body {
+    padding-top: 60px !important;
+    display: block;
+    margin: 0 auto;
+    position: relative !important;
+    z-index: 1 !important;
+}
+
+.box-header {
+    width: 60%;
+    background-color: rgba(245,125,49, 1);
+    margin-bottom: -30px !important;
+    height: 60px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 5px;
+    position: relative !important;
+    z-index: 3 !important;
+}
+
+.box-header p {
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 2.5px;
+    padding-top: 13px;
+}
+
+.btn-primary {
+    border: 1px solid rgba(245,125,49, 1) !important;
+    background-color: rgba(245,125,49, 1) !important;
+    display: block;
+    margin: 0 auto;
+    letter-spacing: 1.5px;
+}
+
+.btn-primary:hover {
+    border: 1px solid rgba(245,125,49, 0.8) !important;
+    background-color: rgba(245,125,49, 0.8) !important;
+}
+
+.btn-outline-primary {
+    border: 1px solid rgba(245,125,49, 1) !important;
+    color: rgba(245,125,49, 1) !important;
+}
+
+.btn-outline-primary:hover {
+    color: #fff !important;
+    border: 1px solid rgba(245,125,49, 0.8) !important;
+    background-color: rgba(245,125,49, 0.8) !important;
+}
+
+.center {
+    text-align: center !important;
+    display: block;
+    margin: 0 auto;
+}
+
+/*/////////////////////////////////////////////////////*/
+input:-webkit-autofill {
+    -webkit-text-fill-color: #000;
+    -webkit-box-shadow: 0 0 0px 1000px #fff inset;
+}
+input:-moz-autofill {
+    -moz-text-fill-color: #000;
+    -moz-box-shadow: 0 0 0px 1000px #fff inset;
+}
+input:-o-autofill {
+    -o-text-fill-color: #000;
+    -o-box-shadow: 0 0 0px 1000px #fff inset;
+}
+input:-khtml-autofill {
+    -khtml-text-fill-color: #000;
+    -khtml-box-shadow: 0 0 0px 1000px #fff inset;
+}
+
+input:focus:-webkit-autofill {
+    -webkit-text-fill-color: #000;
+    -webkit-box-shadow: 0 0 0px 1000px #fff inset;
+}
+input:focus:-moz-autofill {
+    -moz-text-fill-color: #000;
+    -moz-box-shadow: 0 0 0px 1000px #fff inset;
+}
+input:focus:-o-autofill {
+    -o-text-fill-color: #000;
+    -o-box-shadow: 0 0 0px 1000px #fff inset;
+}
+input:focus:-khtml-autofill {
+    -khtml-text-fill-color: #000;
+    -khtml-box-shadow: 0 0 0px 1000px #fff inset;
+}
+
+/**/
+textarea:focus,
+label,
+textarea,
+select,
+select:focus,
+input[type="text"]:focus,
+input[type="file"]:focus,
+input[type="password"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="time"]:focus,
+input[type="week"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="color"]:focus,
+.uneditable-input:focus {   
+  border-color: none !important;
+  box-shadow: none !important;
+  outline: 0 none !important;
+}
+
+
+.btn:focus,.btn:active {
+    outline: none !important;
+    box-shadow: none !important;
+ }
+
+/*------- Product Form ----------*/
+.custom-file-label::after {
+    border: 1px solid rgba(245,125,49, 1) !important;
+    color: rgba(245,125,49, 1) !important;
+    background-color: #fff !important;
+}
+
+.btn-outline-warning:hover {
+    color: #fff !important;
+}
+
+/*------ Jumbotron Animation -------*/
+.card-header {
+    background-color: rgba(245,125,49, 1) !important;
+    color: #fff;
+    letter-spacing: 1.5px;
+}
+
+.jumbotron h2 {
+    margin-top: -20px;
+}
+
+@media only screen and (max-width: 600px) {
+    .jumbotron h2 {
+        margin-top: 10px;
+    }
+}
+
+.jumbotron {
+    width: 30wh;
+    height: 30vh;
+    color: #fff;
+    border-radius: 0%;
+    background: linear-gradient(-45deg, #F57D31, #e73c7e, #319BBA, #23d5ab);
+    background-size: 400% 400%;
+    -webkit-animation: Gradient 15s ease infinite;
+    -moz-animation: Gradient 15s ease infinite;
+    animation: Gradient 15s ease infinite;
+}
+ 
+@-webkit-keyframes Gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+ 
+@-moz-keyframes Gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+ 
+@keyframes Gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/*------ Shop ---------*/
+
+input[type="checkbox"], input[type="radio"] {
+    position: relative;
+    width: 120px;
+    height: 40px;
+    -webkit-appearance: none;
+    background: linear-gradient(0deg, #333, #000);
+    outline: none;
+    border-radius: 20px;
+    box-shadow: 0 0 0 4px #353535, 0 0 0 5px #3e3e3e, inset 0 0 10px rgba(0,0,0,1),
+    0 5px 20px rgba(0,0,0,0.5), inset 0 0 15px rgba(0,0,0,0.2);
+}
+
+input:checked[type="checkbox"], input:checked[type="radio"] {
+    background: linear-gradient(0deg, #6dd1ff, #20b7ff);
+    box-shadow: 0 0 2px #6dd1ff,0 0 0 4px #353535, 0 0 0 5px #3e3e3e, inset 0 0 10px rgba(0,0,0,1),
+    0 5px 20px rgba(0,0,0,0.5), inset 0 0 15px rgba(0,0,0,0.2);
+}
+
+input[type="checkbox"]:before, input[type="radio"]:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 80px;
+    height: 40px;
+    background: linear-gradient(0deg, #000, #6b6b6b);
+    border-radius: 20px;
+    box-shadow: 0 0 0 1px #232323;
+    transform: scale(0.98, 0.96);
+    transition: 2s;
+}
+
+
+input:checked[type="checkbox"]:before, input:checked[type="radio"]:before {
+    left: 40px;
+}
+
+input[type="checkbox"]:after, input[type="radio"]:after {
+    content: "";
+    position: absolute;
+    top: calc(50% - 2px);
+    left: 65px;
+    width: 4px;
+    height: 4px;
+    background: linear-gradient(0deg, #6b6b6b, #000);
+    border-radius: 50%;
+    transition: 2s;
+}
+
+input:checked[type="checkbox"]:after, input:checked[type="radio"]:after {
+    background: #63cdff;
+    left: 105px;
+    box-shadow: 0 0 5px #13b3ff, 0 0 15px #13b3ff;
+}
+
+.checkbox-label, .radiobox-label {
+    display: block;
+    padding-left: 160px;
+    text-indent: -15px;
+    margin-top: -55px;
+    font-weight: bold;
+}
+
+.list-unstyled {
+    margin-left: -40px !important;
+}
+
+.height {
+    height: 30px;
+}
+
+.card-body p {
+    font-size: 18px;
+    text-align: center;
+}
+
+/*----- Search Bar ------*/
+
+/*------- Media Queries --------*/
+@media (max-width: 768px) {  
+    .navbar-nav {
+        margin-left: 0 !important;
+    }
+}
