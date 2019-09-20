@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link, withRouter } from 'react-router-dom';
 import { signout, isAuthenticated } from '../auth';
+import { itemTotal } from './cartHelpers';
 
 const Menu = ({ history }) => {
     const [collapsed, setCollapsed] = useState(true);
@@ -36,6 +37,11 @@ const Menu = ({ history }) => {
                 </li>
                 <li className="nav-item mx-auto">
                     <Link className="nav-link" to="/shop">Shop</Link>
+                </li>
+                <li className="nav-item mx-auto">
+                    <Link className="nav-link" to="/cart">
+                        Cart
+                    </Link>
                 </li>
                 {isAuthenticated() && isAuthenticated().user.role === 0 && (
                     <li className="nav-item mx-auto">

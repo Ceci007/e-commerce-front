@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Layout from './layout';
-import CartShop from './cartShop';
+import Card from './card';
 import { getCategories } from '../admin/apiAdmin';
 import { getFilteredProducts } from './apiCore';
 import Checkbox from './checkbox';
@@ -118,8 +118,10 @@ const Shop = () => {
                    <h2 className="mb-4">Products</h2>
                    <div className="row">
                         { filteredResults.map((product, i) => {
-                            return <CartShop key={ i } product={product} />
-                        }) }
+                            return (
+                                <div key={ i } className="col-md-6 col-sm-12 mb-3">
+                                    <Card key={ i } product={product} />
+                                </div>)}) }
                    </div>
                    { loadMoreButton() }
                </div>

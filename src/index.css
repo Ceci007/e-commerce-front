@@ -145,6 +145,13 @@ button.navbar-toggler:focus { outline: 1px none !important; }
     margin: 0 auto;
 }
 
+.width {
+    text-align: center !important;
+    display: block;
+    margin: 0 auto;
+    width: 150px;
+}
+
 /*/////////////////////////////////////////////////////*/
 input:-webkit-autofill {
     -webkit-text-fill-color: #000;
@@ -289,6 +296,15 @@ input[type="color"]:focus,
     }
 }
 
+.cart-badge {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
 /*------ Shop ---------*/
 
 input[type="checkbox"], input[type="radio"] {
@@ -367,7 +383,11 @@ input:checked[type="checkbox"]:after, input:checked[type="radio"]:after {
     text-align: center;
 }
 
-/*----- Search Bar ------*/
+/*----- Orders ------*/
+.orange-bg {
+    background-color: rgba(245,125,49, 1);
+    color: #fff;
+}
 
 /*------- Media Queries --------*/
 @media (max-width: 768px) {  

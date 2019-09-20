@@ -23,6 +23,21 @@ const AdminDashboard = () => {
                             Create Product
                         </Link>
                     </li>
+                    <li className="list-group-item">
+                        <Link className="btn btn-primary btn-block" to="/admin/products">
+                            Manage Products
+                        </Link>
+                    </li>
+                    <li className="list-group-item">
+                        <Link className="btn btn-primary btn-block" to="/admin/orders">
+                            View Orders
+                        </Link>
+                    </li>
+                    <li className="list-group-item">
+                        <Link className="btn btn-primary btn-block" to={`/profile/${_id}`}>
+                            Update Profile
+                        </Link>
+                    </li>
                 </ul>
             </div>
         );
